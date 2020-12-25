@@ -8,14 +8,16 @@ namespace ACM.BL
 {
     public class Customer
     {
-        public Customer()
+        public Customer():this(0)
         {
 
         }
         public Customer(int customerId)
         {
             CustomerID = customerId;
+            Addresses = new List<Address>();
         }
+        public List<Address> Addresses { get; set; }
         public static int InstanceCount { get; set; }
         public int CustomerID { get; private set; }
         public string EmailID { get; set; }
