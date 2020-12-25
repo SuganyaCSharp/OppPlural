@@ -8,6 +8,14 @@ namespace ACM.BL
 {
     public class OrderItemRepository
     {
+        public OrderItem Retrieve(int orderId)
+        {
+            OrderItem orderitem = new OrderItem(orderId);
+            orderitem.ProductID = 1;
+            orderitem.PurchasePrice = 120;
+            orderitem.Quantity = 15;
+            return orderitem;
+        }
         public List<OrderItem> GetOrderItems(int orderid)
         {
             List<OrderItem> orderItems = new List<OrderItem>();
@@ -17,6 +25,10 @@ namespace ACM.BL
             orderitem.Quantity = 15;
             orderItems.Add(orderitem);
             return orderItems;
+        }
+        public bool save()
+        {
+            return true;
         }
     }
 }
