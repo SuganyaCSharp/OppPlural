@@ -17,6 +17,7 @@ namespace ACM.BL
             CustomerID = customerId;
             Addresses = new List<Address>();
         }
+        public int CustomerType { get; set; }
         public List<Address> Addresses { get; set; }
         public static int InstanceCount { get; set; }
         public int CustomerID { get; private set; }
