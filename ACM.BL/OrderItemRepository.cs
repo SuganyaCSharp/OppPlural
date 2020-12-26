@@ -26,9 +26,28 @@ namespace ACM.BL
             orderItems.Add(orderitem);
             return orderItems;
         }
-        public bool save()
+        public bool save(OrderItem orderitem)
         {
-            return true;
+            var success = true;
+            if (orderitem.Haschanges)
+            {
+                if (orderitem.Isvalid)
+                {
+                    if (orderitem.IsNew)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }
