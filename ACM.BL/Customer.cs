@@ -47,7 +47,7 @@ namespace ACM.BL
         }
         public override string ToString()
         {
-            return FirstName;
+            return FullName;
         }
         public override bool Validate()
         {

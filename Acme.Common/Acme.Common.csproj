@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DEF959B7-2D0B-4AFD-9FB7-FB608471EFD3}</ProjectGuid>
+    <ProjectGuid>{C3F70FB6-CA14-4A98-92F0-1B57276E58F2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ACM.BL</RootNamespace>
-    <AssemblyName>ACM.BL</AssemblyName>
+    <RootNamespace>Acme.Common</RootNamespace>
+    <AssemblyName>Acme.Common</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,24 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
-    <Compile Include="AddressRepository.cs" />
-    <Compile Include="CustomerRepository.cs" />
-    <Compile Include="EntityBase.cs" />
-    <Compile Include="OrderItemRepository.cs" />
-    <Compile Include="OrderRepository.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="order.cs" />
-    <Compile Include="OrderItem.cs" />
-    <Compile Include="ProductRepsoitory.cs" />
+    <Compile Include="StringHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Acme.Common\Acme.Common.csproj">
-      <Project>{c3f70fb6-ca14-4a98-92f0-1b57276e58f2}</Project>
-      <Name>Acme.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

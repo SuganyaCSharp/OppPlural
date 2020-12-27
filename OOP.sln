@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0C72FB16
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BLTest", "ACM.BLTest\ACM.BLTest.csproj", "{87DF5E0F-139D-4375-B8CD-630D39797180}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Common", "Acme.Common\Acme.Common.csproj", "{C3F70FB6-CA14-4A98-92F0-1B57276E58F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.CommomTest", "Acme.CommomTest\Acme.CommomTest.csproj", "{33FED779-B375-428D-BCF1-F64D76A91597}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,21 @@ Global
 		{87DF5E0F-139D-4375-B8CD-630D39797180}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87DF5E0F-139D-4375-B8CD-630D39797180}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87DF5E0F-139D-4375-B8CD-630D39797180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F70FB6-CA14-4A98-92F0-1B57276E58F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F70FB6-CA14-4A98-92F0-1B57276E58F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F70FB6-CA14-4A98-92F0-1B57276E58F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F70FB6-CA14-4A98-92F0-1B57276E58F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33FED779-B375-428D-BCF1-F64D76A91597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FED779-B375-428D-BCF1-F64D76A91597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FED779-B375-428D-BCF1-F64D76A91597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FED779-B375-428D-BCF1-F64D76A91597}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{87DF5E0F-139D-4375-B8CD-630D39797180} = {0C72FB16-8E63-4227-BCC2-ACF97E0D8B15}
+		{33FED779-B375-428D-BCF1-F64D76A91597} = {0C72FB16-8E63-4227-BCC2-ACF97E0D8B15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B6C3933-F540-4EBA-96D7-F89A0C89CE21}
