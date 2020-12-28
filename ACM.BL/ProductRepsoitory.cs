@@ -24,7 +24,7 @@ namespace ACM.BL
             var success = true;
             if (product.Haschanges)
             {
-                if (product.Isvalid)
+                if (product.Validate())
                 {
                     if (product.IsNew)
                     {
