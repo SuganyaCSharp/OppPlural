@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class OrderItem:EntityBase
+    public class OrderItem:EntityBase, ILoggable
     {
         public OrderItem()
         {
@@ -20,6 +21,9 @@ namespace ACM.BL
         public int ProductID { get; set; }
         public decimal? PurchasePrice { get; set; }
         public int Quantity { get; set; }
+
+        public string Log() =>
+            $"{OrderItemID} ";
         public override string ToString()
         {
             return ProductID.ToString();
